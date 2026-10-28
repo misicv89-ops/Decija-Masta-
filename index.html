@@ -654,24 +654,6 @@ image-slot{touch-action:pan-x pan-y pinch-zoom}
   </div>
 </section>
 
-<section class="section_galerija" style="background:#fff">
-  <div class="padding-global" style="padding:0 clamp(20px,4vw,56px)">
-    <div class="container-large" style="max-width:1328px;margin:0 auto;padding:clamp(56px,7vw,96px) 0 clamp(64px,8vw,112px)">
-      <div data-reveal="" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:32px">
-        <h2 style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(34px,4vw,54px);line-height:1.08;margin:0">Galerija prostora</h2>
-        
-      </div>
-      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:20px">
-        <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="9">
-          <div style="position:relative;aspect-ratio:4/3;border-radius:24px;overflow:hidden;box-shadow:0 8px 22px rgba(31,42,92,.1)">
-            <image-slot id="{{ g.id }}" src="{{ g.src }}" shape="rect" placeholder="{{ g.label }}" aria-label="{{ g.label }}"></image-slot>
-            <button onClick="{{ g.open }}" aria-label="Uvecaj fotografiju" style="position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;box-shadow:0 4px 12px rgba(31,42,92,.2);cursor:pointer;display:grid;place-items:center;transition:transform .2s ease" style-hover="transform:scale(1.08)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F2A5C" stroke-width="2.6" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg></button>
-          </div>
-        </sc-for>
-      </div>
-    </div>
-  </div>
-</section>
 </sc-if>
 
 <!-- ===================== UPIS ===================== -->
